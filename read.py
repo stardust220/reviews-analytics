@@ -16,3 +16,17 @@ for d in data:
         new.append(d)
 
 print("the total number of the review which less than 100 words are", len(new))
+
+
+good =[]
+for d in data:
+    if 'good' in d:
+        good.append(d)
+print("the total number of the review which mentioned 'good' are", len(new))
+print(good[0])
+
+#list comprehension
+good_2 = [d for d in data if 'good' in d]
+
+bad = ['bad' in d for d in data]
+
